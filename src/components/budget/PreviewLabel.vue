@@ -1,5 +1,5 @@
 <template>
-  <label class="flex w-full justify-between" :class="labelClass">
+  <label class="flex w-full justify-between text-slate-600" :class="labelClass">
     {{ label }}
     <span class="font-normal" :class="valueClass">
       {{ currencyFormatter(Number(value)) }}
@@ -28,7 +28,8 @@ const props = withDefaults(defineProps<LabelProps>(), {
 const sizeMap: Record<string, string> = {
   small: "text-sm",
   medium: "text-lg font-medium",
-  large: "text-3xl font-bold",
+  large: "text-2xl font-semibold",
+  "x-large": "text-3xl font-bold",
 };
 
 const natureMap: Record<TransactionNature, string> = {

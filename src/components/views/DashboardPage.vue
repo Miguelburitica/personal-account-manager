@@ -1,6 +1,6 @@
 <template>
   <main class="w-full flex flex-col">
-    <section class="flex flex-1 sm:grid sm:grid-cols-3">
+    <section class="flex flex-col flex-1 md:grid md:grid-cols-3">
       <CurrentMonthBudget class="col-span-1" />
       <article
         class="col-span-2 flex items-center justify-center border-2 border-purple-400"
